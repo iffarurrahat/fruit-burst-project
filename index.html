@@ -84,10 +84,10 @@
             </div>
 
             <!-- navbar end -->
-            <div class="navbar-end hidden lg:flex mr-5">
+            <div class="navbar-end hidden lg:flex mr-5 relative">
                 <input type="text" placeholder="Search here"
-                    class="input rounded-3xl w-24 md:w-72 relative border-flamingo-pink" />
-                <i class="fa-solid fa-magnifying-glass absolute right-20"></i>
+                    class="input rounded-3xl w-24 md:w-72 border-flamingo-pink" />
+                <i class="fa-solid fa-magnifying-glass absolute right-3"></i>
             </div>
         </div>
     </header>
@@ -170,27 +170,29 @@
             </div>
         </section>
         <!-- Banner__Position Section -->
-        <section class="hidden lg:block max-w-screen-xl mx-auto absolute -bottom-28 left-36 z-20">
-            <div class="flex justify-around gap-16 drop-shadow-xl bg-white text-center px-14 py-10 rounded-lg">
-                <div>
-                    <img src="./images/fruit1.png" alt="">
-                    <p class="font-medium text-transparent-black">Strawberry</p>
-                </div>
-                <div>
-                    <img src="./images/fruit2.png" alt="">
-                    <p class="font-medium text-transparent-black">Orange</p>
-                </div>
-                <div>
-                    <img src="./images/fruit3.png" alt="">
-                    <p class="font-medium text-transparent-black">Mango</p>
-                </div>
-                <div>
-                    <img src="./images/fruit4.png" alt="">
-                    <p>Strawberry</p>
-                </div>
-                <div>
-                    <img src="./images/fruit_pomegranate.png" alt="">
-                    <p class="font-medium text-transparent-black">Pomegranate</p>
+        <section class="flex justify-center">
+            <div class="hidden lg:block absolute -bottom-28 z-20">
+                <div class="flex justify-around gap-16 drop-shadow-xl bg-white text-center px-14 py-10 rounded-lg">
+                    <div>
+                        <img src="./images/fruit1.png" alt="">
+                        <p class="font-medium text-transparent-black">Strawberry</p>
+                    </div>
+                    <div>
+                        <img src="./images/fruit2.png" alt="">
+                        <p class="font-medium text-transparent-black">Orange</p>
+                    </div>
+                    <div>
+                        <img src="./images/fruit3.png" alt="">
+                        <p class="font-medium text-transparent-black">Mango</p>
+                    </div>
+                    <div>
+                        <img src="./images/fruit4.png" alt="">
+                        <p>Strawberry</p>
+                    </div>
+                    <div>
+                        <img src="./images/fruit_pomegranate.png" alt="">
+                        <p class="font-medium text-transparent-black">Pomegranate</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -437,14 +439,16 @@
 
         <!-- Meet__Team Section  -->
         <section class="max-w-screen-xl mx-auto px-4 md:px-0">
-            <div class="bg-[url('./images/team.png')] bg-no-repeat py-5 md:py-28 bg-cover rounded-lg">
-                <div class="text-center mb-5 md:mb-12">
-                    <h2 class="text-white text-3xl md:text-5xl font-extrabold mb-6">Meet the team section</h2>
-                    <p class=" text-white font-medium">Contrary to popular belief, is not simply random text. It has
-                        roots
-                        in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
-                </div>
-                <!-- Teams cards -->
+            <div class="hero min-h-screen bg-[url('./images/team.png')] bg-no-repeat bg-cover rounded-lg overflow-hidden">
+                <!-- overlay background__color -->
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="py-16 lg:py-0">
+                    <!-- content -->
+                    <div class="text-center mb-6 md:mb-12">
+                        <h2 class="text-white text-3xl md:text-5xl font-extrabold mb-6">Meet the team section</h2>
+                        <p class=" text-white font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+                    </div>
+                    <!-- Teams cards -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                     <!-- Team_1 -->
                     <div class="card">
@@ -506,6 +510,7 @@
                             </div>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </section>
